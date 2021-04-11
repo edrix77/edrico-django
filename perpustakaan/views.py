@@ -12,5 +12,6 @@ def buku(request):
         'penulis' : penulis,
     }
     return render(request, 'buku.html', konteks)
+
 def penerbit(request):
-    return HttpResponse('Halaman Penerbit')
+    return render(request, 'penerbit.html')
